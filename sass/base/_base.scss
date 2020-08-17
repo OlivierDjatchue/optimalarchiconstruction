@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Roboto&display=swap');
+
+
+:root {
+	/* colors */
+	--primary: #007b94;
+}
+
+
+
+// box-shadow
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #333;
+	font-family: Roboto, sans-serif;
+}
+
+h1 {
+	font-family: Merienda sans-serif;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h2:after {
+	display: block;
+	height: 3px;
+	background-color: var(--primary);
+	content: "";
+	width: 150px;
+	margin: 20px auto;
+}
