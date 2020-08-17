@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Roboto&display=swap");
+/* BASICS SETUP */
+:root {
+  /* colors */
+  --primary: #007b94; }
+
+/* Variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  font-family: Roboto, sans-serif; }
+
+h1 {
+  font-family: Merienda sans-serif; }
+
+h2:after {
+  display: block;
+  height: 3px;
+  background-color: var(--primary);
+  content: "";
+  width: 150px;
+  margin: 20px auto; }
+
+/* SECTIONS */
+#section_home {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/1.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: left;
+  align-items: center; }
+
+/* Heading*/
+.heading-text-box {
+  margin-left: 3rem;
+  -webkit-animation-name: moveInleft;
+  animation-name: moveInleft;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s; }
+
+.heading-primary-main {
+  font-family: Merienda, sans-serif;
+  font-weight: 700;
+  color: white; }
+
+.heading-primary-sub {
+  font-family: Merienda, sans-serif;
+  font-weight: 700;
+  color: white; }
+
+/* NAVIGATION */
+.navbar-dark .navbar-nav .nav-link {
+  color: white; }
+
+.navbar-brand {
+  margin-left: 2rem;
+  font-size: 1.5rem; }
+
+/* BUTTONS*/
+.button {
+  border-radius: 98px;
+  color: #ffffff;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 5px 20px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center; }
+
+.button__full {
+  background: #0097b6;
+  background-image: linear-gradient(to bottom, #0097b6, #00b3d8);
+  box-shadow: 0px 20px 23px 0px #000000;
+  border: solid #0097b6 1px; }
+
+.button__ghost {
+  background: transparent;
+  border: solid #0097b6 1px; }
+
+.button:hover {
+  border: solid #3d94f6 1px;
+  background: #1e62d0;
+  background-image: linear-gradient(to bottom, #1e62d0, #3d94f6);
+  border-radius: 100px;
+  text-decoration: none; }
+
+.button:active {
+  transform: translateY(3px);
+  box-shadow: 0px 5px 5px 0px #000000; }
+
+/*ANIMATIONS*/
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% { }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
