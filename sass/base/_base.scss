@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Roboto&display=swap');
 
-
 :root {
 	/* colors */
 	--primary: #007b94;
 }
-
-
 
 // box-shadow
 
@@ -14,10 +11,10 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
 }
-
-
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	font-family: 'Lato', sans-serif;
@@ -43,4 +40,10 @@ h2:after {
 	content: "";
 	width: 150px;
 	margin: 20px auto;
+}
+
+h3 {
+	font-size: 110%;
+	margin-bottom: 15px;
+	text-transform: uppercase;
 }

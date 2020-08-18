@@ -1,6 +1,14 @@
 .navbar-dark .navbar-nav .nav-link {
 	color: white;
+	font-size: 1.5rem;
+	margin-right: 1.5rem;
+	padding-bottom:.3rem;
+	
+	&:hover{
+		border-bottom: 2px solid #007b94;
+	}
 }
+
 .navbar-brand {
 	margin-left: 2rem;
 	font-size: 1.5rem;

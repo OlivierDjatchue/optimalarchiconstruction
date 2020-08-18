@@ -1,19 +1,9 @@
-@import "abtstracts/functions";
-@import "abtstracts/mixins";
-@import "abtstracts/variables";
-@import "base/animations";
-
-
 @import "base/base";
-@import "base/utilities";
-
 @import "components/button";
 @import "components/navigation";
+@import "components/gallery";
 
 @import "pages/home";
-
-
-
 
 /* SECTIONS */
 
@@ -33,16 +23,16 @@
 .heading-text-box {
 	display: block;
 	margin-left: 3rem;
-	-webkit-animation-name: moveInleft;
-	animation-name: moveInleft;
-	-webkit-animation-duration: 3s;
-	animation-duration: 3s;
 }
 
 .heading-primary-main {
 	font-family: Merienda, sans-serif;
 	font-weight: 700;
 	color: white;
+
+	@media screen and(max-width : 600px) {
+		font-size: 1rem;
+	}
 }
 
 .heading-primary-sub {
@@ -51,5 +41,121 @@
 	color: white;
 }
 
+/*ICONS*/
 
+.icon-big {
+	color: #007b94;
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
 
+#section-projets {
+	padding: 20px 0;
+	background-color: #eee;
+}
+
+.box-image {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	overflow: hidden;
+
+	img {
+		opacity: 0.7;
+		transform: scale(1.2);
+		transition: transform 0.4s, opacity 0.4s;
+
+		&:hover {
+			opacity: 1;
+			transform: scale(1.03);
+			background-color: #fff;
+		}
+	}
+
+	.image1-description {
+		position: absolute;
+		top: 75%;
+		left: 10%;
+		z-index: 10;
+		color: white;
+		font-size: 1.5rem;
+		transform: translateY(50px);
+		transition: all .3s;
+		background-color: rgba(0, 0, 0, .7);
+		opacity: 0;
+		//padding: 50px 50px;
+	}
+}
+
+.box-image:hover .image1-description {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/*SECTION SERVICES */
+#section-services {
+	padding: 20px 0;
+	background-color: #eee;
+}
+
+.flyer {
+	border-radius: 20px;
+}
+
+.services-box {
+	margin-top: 5rem;
+}
+.service {
+	margin: 3rem auto;
+	h3 {
+		color: #007b94;
+	}
+}
+
+/*Section equipe */
+#section-equipe {
+	color: #eee;
+	padding: 20px 0;
+	background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .7)), url('../img/hero.png');
+}
+
+@media screen and (max-width: 991px) {
+	.team {
+		float: left;
+	}
+}
+
+/*CONTACT*/
+
+#section-contact {
+	padding: 20px 0;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+	width: 100%;
+	padding: 7px;
+	border-radius: 5px;
+	border: 2px solid #007b94;
+	margin: 10px 5px 10px 0px;
+}
+
+*focus {
+	outline: none;
+}
+
+input[type=submit] {
+	cursor: pointer;
+}
+
+textarea {
+	height: 200px;
+	margin-top: 20px;
+}
+
+input[type=checkbox] {
+	margin: 10px 5px 10px 0px;
+}

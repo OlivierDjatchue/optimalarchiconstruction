@@ -1,91 +1,302 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Optimal Archi-Construction</title>
-</head>
-<body>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Optimal Archi-Construction</title>
+    </head>
+    <body>
 
-        <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
-        <a href="#" class="navbar-brand">Optimal Archi-Construction</a>
+            <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top " id="navigation" >
+            <a href="#" class="navbar-brand">Optimal Archi-Construction</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="#" class="nav-link active">Acceuil</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Projets</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Equipe</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-            </ul>
-    </div>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#section_home" class="nav-link active">Acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section-projets" class="nav-link">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section-services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section-equipe" class="nav-link">Equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section-contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+        </div>
 
-    </nav>
-    <!-- Section home -->
-    <div id="section_home">
-        <div class="heading-text-box">
-            <h1 class="heading-primary-main">Confiez nous votre maison de rêve </h1>
-            <h1 class="heading-primary-sub">Pour un confort Optimal</h1>
-            <button class="button button__full">en savoir plus</button>
-            <button class="button button__ghost">je veux un devis</button>
-        </div> 
-    </div>
-    <!-- section Vision -->
-    <div id="Section__vision">
-        <div class="container">
-            <div class="salutation text-center my-3">
-                <h2>Pourquoi choisir Optimal</h2>
-                <p>Nous somme Optimal Archi-Construction , une société de BTP basé a yaoundé. Notre mission est contruire votre maison de rêve a un prix battant toute la concurence</p>
+        </nav>
+        <!-- Section home -->
+        <div id="section_home">
+            <div class="heading-text-box">
+                <h1 class="heading-primary-main">Confiez nous votre maison de rêve </h1>
+                <h1 class="heading-primary-sub">Pour un confort Optimal</h1>
+                <button class="button button__full" id="button">en savoir plus</button>
+                <button class="button button__ghost">je veux un devis</button>
+            </div> 
+        </div>
+        <!-- section Vision -->
+        <div id="Section__vision">
+            <div class="container">
+                <div class="salutation text-center my-3">
+                    <h2>Pourquoi choisir Optimal</h2>
+                    <p>Nous somme Optimal Archi-Construction , une société de BTP basé a yaoundé. Notre mission est contruire votre maison de rêve a un prix battant toute la concurence</p>
 
+                </div>
+
+                <div class="row">
+                <div class="col-md-4">
+                    <i class="fas fa-users-cog icon-big text-center"></i>
+                    <h3 class="text-center">NOTRE EQUIPE</h3>
+                    <P>Nous sommes constitués d’une jeune équipe dynamique composée d'une ING en Génie Civil avec plus de 10 ans d'expérience, des Architectes très talentueux, d'un chargé des opérations, et des Maçons Qualifiés.</P>
+
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-tools icon-big text-center"></i>
+                    <h3 class="text-center">Nos Œuvres</h3>
+                    <P>Jusqu'ici, nous avons déjà réalisé plus de 55 Projets BTP. De la simple Villa jusqu'au grand Immeuble. Nous sommes donc en mesure de réaliser votre chantier dans les délais en tout professionnalisme. </P>
+
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-smile icon-big text-center"></i>
+                    <h3 class="text-center">Suivit du client</h3>
+                    <P>De la conception, jusqu’à la réalisation, et même après livraison du travail effectué, nous nous assurons de la satisfaction du client, car chez nous le client est roi. </P>
+
+                </div>
+                </div>
             </div>
 
-            <div class="row">
-            <div class="col-md-4">
-                <i class="fas fa-users-cog"></i>
-                <h3>NOTRE EQUIPE</h3>
-                <P>Nous sommes constitués d’une jeune équipe dynamique composée d'une ING en Génie Civil avec plus de 10 ans d'expérience, des Architectes très talentueux, d'un chargé des opérations, et des Maçons Qualifiés.</P>
+        </div>
 
-            </div>
-            <div class="col-md-4">
-                <i class="fas fa-tools"></i>
-                <h3>Nos Œuvres</h3>
-                <P>Jusqu'ici, nous avons déjà réalisé plus de 55 Projets BTP. De la simple Villa jusqu'au grand Immeuble. Nous sommes donc en mesure de réaliser votre chantier dans les délais en tout professionnalisme. </P>
+        <!-- Section Gallery des Projets -->
 
+        <div id="section-projets">
+            <h2 class=" text-center">Nos Projets</h2>
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col-lg-3 col-md-6 box-image">
+                        <img src="img/1.png" style="width:100%" class="image1">
+                        <p class="image1-description">
+                        Duplex a usage d'habitation dans la ville de yaoundé 
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 box-image">
+                        <img src="img/2.png" style="width:100%">
+                        <p class="image1-description">
+                            Duplex a usage d'habitation dans la ville de yaoundé 
+                            </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 box-image">
+                        <img src="img/3.png" style="width:100%">
+                        <p class="image1-description">
+                            Duplex a usage d'habitation dans la ville de yaoundé 
+                            </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 box-image">
+                        <img src="img/4.png" style="width:100%">
+                        <p class="image1-description">
+                            Duplex a usage d'habitation dans la ville de yaoundé 
+                            </p>
+                    </div>
+    
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-lg-3 col-md-6 box-image">
+                        <img src="img/5.jpeg" style="width:100%">
+                        <p class="image1-description">
+                            Duplex a usage d'habitation dans la ville de yaoundé 
+                            </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 box-image">
+                        <img src="img/6.jpeg" style="width:100%">
+                        <p class="image1-description">
+                            Duplex a usage d'habitation dans la ville de yaoundé 
+                            </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 box-image">
+                        <img src="img/7.jpeg" style="width:100%">
+                        <p class="image1-description">
+                            Duplex a usage d'habitation dans la ville de yaoundé 
+                            </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 box-image">
+                        <img src="img/7.jpeg" style="width:100%">
+                        <p class="image1-description">
+                            Villa a usage d'habitation dans la ville de Douala
+                            </p>
+                    </div>
+                    
+                </div>
             </div>
-            <div class="col-md-4">
-                <i class="fas fa-smile"></i>
-                <h3>Suivit du client</h3>
-                <P>De la conception, jusqu’à la réalisation, et même après livraison du travail effectué, nous nous assurons de la satisfaction du client, car chez nous le client est roi. </P>
 
-            </div>
+        </div>
+
+        <!-- Nos Services -->
+
+        <div id="section-services">
+
+            <div class="container">
+                <h2 class="text-center">SERVICES</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="img/9.jpeg" alt="nos services" class="flyer">
+
+                    </div>
+                    <div class="col-lg-6 services-box text-center" >
+                        <div class="service service1  ">
+                            <h3>CONCEPTION ARCHTECTUTALE</h3>
+                            <P>conception,  design et  conseils concernant le bâtiment. </P>
+                        </div>
+
+                        <div class="service service1">
+                            <h3>CONCEPTION ARCHTECTUTALE</h3>
+                            <P>conception,  design et  conseils concernant le bâtiment. </P>
+                        </div>
+
+                        <div class="service service1">
+                            <h3>CONCEPTION ARCHTECTUTALE</h3>
+                            <P>conception,  design et  conseils concernant le bâtiment. </P>
+                        </div>
+
+                        
+                    </div>
+                </div>
             </div>
         </div>
 
-    </div>
+        <!-- notre equipe -->
+        <div id="section-equipe">
+            <div class="container">
+                <h2 class="text-center">Notre equipe</h2>
+                <div class="row">
+                    <div class="col-lg-4 team">
+                        <img src="img/Ghislain.jpeg" alt="Ghislain">
+                        <div>
+                            <h3>Ghislain Yontchui</h3>
+                            <p>Ghislain est ingenieur en genie civil avec plus de 8 ans d'experience dans la conception des des batiments.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-4 team">
+                        <img src="img/Olivier.jpg " alt="Olivier">
+                        <div>
+                            <h3>Olivier Djatchue</h3>
+                            <p>Olivier est notre chef des Operation, il est ingenieur en genie Mécanique, et est basé a stuttgart en allemagne.
+                            Il est le represente de Optimal Archi-construction dans la Diaspora</p>
+                            
+                        </div>
 
-<!-- Script für bootstrap -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<!-- main script file -->
-<script src="script.js"></script>
-</body>
+                    </div>
+                    <div class="col-lg-4 team">
+                        <img src="img/Bernard.jpeg" alt="Bernard">
+                        <div>
+                            <h3>Bernard Mefeuya</h3>
+                            <p>Bernard est le chef chantier, un macon tres dynamique avec plus de 5 ans d'experience dans le réalisation de tout type de batiments</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Section contact -->
+        
+        <div id="section-contact">
+            <form class="container">
+                <h2 class="text-center">Contactez nous</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p><i class="fas fa-envelope-open-text"></i> : Optimal@gmail.com</p>
+                        <p><i class="fab fa-whatsapp"></i>:  (+49) 17630311946<br>  (+237) 673344239</p>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <form method="post" action="#" class="contact-form">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <label for="nom">Nom</label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="text" name="nom" id="nom" placeholder="votre nom" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="email" name="email" id="email" placeholder="votre email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <label>Comment  vous nous <br>avez-vous trouvés ?</label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <select name="find-us" id="find-us">
+                                        <option value="Amis" selected>Amis</option>
+                                        <option value="Moteur" >Moteur de recherche</option>
+                                        <option value="Pub">Publicité</option>
+                                        <option value="Autres">Autres</option>
+                
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <label>Newsletter</label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="checkbox" name="News" id="News"  checked> oui, s'il vous plaît
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <label>Votre Message</label>  
+                                </div>
+                                <div class="col-lg-4">
+                                    <textarea name="message" placeholder="votre message"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <label>&nbsp;</label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="submit" value="Envoyer">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                
+               
+               
+            </div>
+
+        </div>
+
+
+        <!-- Script für bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!-- main script file -->
+        <script src="script.js"></script>
+    </body>
+
 </html>
