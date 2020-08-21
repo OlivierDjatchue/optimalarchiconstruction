@@ -2,6 +2,7 @@
 @import "components/button";
 @import "components/navigation";
 @import "components/gallery";
+@import "components/icons";
 
 @import "pages/home";
 
@@ -42,12 +43,6 @@
 }
 
 /*ICONS*/
-
-.icon-big {
-	color: #007b94;
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
 
 #section-projets {
 	padding: 20px 0;
@@ -117,7 +112,7 @@
 #section-equipe {
 	color: #eee;
 	padding: 20px 0;
-	background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .7)), url('../img/hero.png');
+	background-color: #007b94;
 }
 
 @media screen and (max-width: 991px) {
@@ -158,4 +153,19 @@ textarea {
 
 input[type=checkbox] {
 	margin: 10px 5px 10px 0px;
+}
+
+/*Form validation */
+
+.form-message {
+	padding: 10px;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+.success {
+	background-color: forestgreen;
+}
+
+.error {
+	background-color: red;
 }

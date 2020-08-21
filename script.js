@@ -1,18 +1,18 @@
-const navbar = document.getElementById('navigation');
-const colorHeading = document.querySelector('.heading-primary-main');
+// const navbar = document.getElementById('navigation');
+// const colorHeading = document.querySelector('.heading-primary-main');
 
-window.onscroll = function() {
-	scroll();
-};
+// window.onscroll = function() {
+// 	scroll();
+// };
 
-function scroll() {
-	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-		navbar.classList.add('bg-dark');
-	} else {
-		navbar.classList.remove('bg-dark');
-		colorHeading.style.color = 'white';
-	}
-}
+// function scroll() {
+// 	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+// 		navbar.classList.add('bg-dark');
+// 	} else {
+// 		navbar.classList.remove('bg-dark');
+// 		colorHeading.style.color = 'white';
+// 	}
+// }
 
 // $(document).ready(function() {
 // 	// Add smooth scrolling to all links

@@ -11,7 +11,7 @@
     <body>
 
             <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top " id="navigation" >
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark " id="navigation" >
             <a href="#" class="navbar-brand">Optimal Archi-Construction</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -194,7 +194,7 @@
                         <img src="img/Olivier.jpg " alt="Olivier">
                         <div>
                             <h3>Olivier Djatchue</h3>
-                            <p>Olivier est notre chef des Operation, il est ingenieur en genie Mécanique, et est basé a stuttgart en allemagne.
+                            <p>Olivier est notre chef des Operation,    et est basé a stuttgart en allemagne.
                             Il est le represente de Optimal Archi-construction dans la Diaspora</p>
                             
                         </div>
@@ -217,15 +217,30 @@
         <div id="section-contact">
             <form class="container">
                 <h2 class="text-center">Contactez nous</h2>
-                <div class="row">
+                <div class="row" id="form">
                     <div class="col-lg-4">
-                        <p><i class="fas fa-envelope-open-text"></i> : Optimal@gmail.com</p>
-                        <p><i class="fab fa-whatsapp"></i>:  (+49) 17630311946<br>  (+237) 673344239</p>
+                        <p><i class="fas fa-envelope icon-small"></i> : Optimal@gmail.com</p>
+                        <p><i class="fab fa-whatsapp-square whatsapp"></i>:  (+49) 17630311946<br>  (+237) 673344239</p>
                     </div>
-
                     <div class="col-lg-8">
-                        <form method="post" action="#" class="contact-form">
+                        <div class="row">
+                            <?php
+                            if($_GET['success']==1){
+                                echo" <div class=\"col-lg-8 form-message success\">
+                                Thank You your message has been send
+                            </div>"
+                            }
+                            if($_GET['success']==-1){
+                               echo" <div class=\"col-lg-8 form-message error\">
+                                OOPs something when wrong, please try again!
+                            </div> "
+                            }
+                            ?>
+                        </div>
+
+                        <form method="post" action="mail.php" class="contact-form">
                             <div class="row">
+                                
                                 <div class="col-lg-4">
                                     <label for="nom">Nom</label>
                                 </div>
@@ -251,7 +266,6 @@
                                         <option value="Moteur" >Moteur de recherche</option>
                                         <option value="Pub">Publicité</option>
                                         <option value="Autres">Autres</option>
-                
                                     </select>
                                 </div>
                             </div>
@@ -281,12 +295,12 @@
                             </div>
                         </form>
                     </div>
-
                 </div>
                 
-               
-               
             </div>
+        </div>
+
+        <div id="section-footer">
 
         </div>
 
